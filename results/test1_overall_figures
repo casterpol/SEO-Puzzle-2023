@@ -1,9 +1,0 @@
-Total rows checked: 50000
-Total VALID vehicles found: 33359
-Total INVALID vehicles found: 16641
-The following is a more granular breakdown of the INVALID vehicles by header:
-Please be aware some vehicles had more than 1 issue
-Invalid VRN: 4226
-Invalid Make: 5025
-Invalid Colour: 4961
-Invalid Date of Manufacture: 5076
