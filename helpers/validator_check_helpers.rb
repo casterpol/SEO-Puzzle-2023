@@ -6,6 +6,7 @@ require_relative 'validator_formatting_helpers'
 def validation_check(header, value)
   case header
   when 'vrn'
+    # regex to exclude '00' reg marks /^[A-Z]{2}((0[1-9])?([1-9][0-9])?)\s?[A-Z]{3}/
     value.upcase.match?(/^[A-Z]{2}\d{2}\s?[A-Z]{3}/)? Formatters::format_vrn(value) : "VRN: #{value} is an invalid format"
 
   when 'make'
