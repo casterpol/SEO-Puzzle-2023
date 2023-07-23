@@ -7,15 +7,15 @@ def overview(figures)
   end
 end
 def save_to_csv(file_name, valid_data, invalid_data, figures)
-  CSV.open(file_name+"_valid_vehicles", 'w') do |line|
+  CSV.open(file_name+"_valid_vehicles.csv", 'w') do |line|
     valid_data.each { |object| line << object}
   end
 
-  CSV.open(file_name+"_invalid_vehicles", 'w') do |line|
+  CSV.open(file_name+"_invalid_vehicles.csv", 'w') do |line|
     invalid_data.each { |object| line << object}
   end
 
-  CSV.open(file_name+"_overall_figures", 'w') do |line|
+  CSV.open(file_name+"_overall_figures.csv", 'w') do |line|
     figures.each { |object| line << object}
   end
 
